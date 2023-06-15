@@ -7,6 +7,65 @@
     <link rel="stylesheet" href="Home.css">
     <style>
 
+ #category > div:nth-child(1) {
+    display: flex;
+    width: 90%;
+    gap: 20px;
+    margin: auto;
+}
+#category > div:nth-child(1)>div img{
+  height: 95%;
+}
+#category img {
+    width: 100%;
+}
+#category >div>div{
+  width: 50%;
+}
+#category button{
+  width: 90%;
+  padding: 20px;
+  margin: auto;
+  margin-left: 5%;
+  margin-top: 20px;
+  font-size: 20px;
+  background-color:rgb(129, 129, 243) ;
+}
+#tours {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+#tours img {
+    width: 100%;
+}
+#ques {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+#ques img {
+    width: 100%;
+}
+#help {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+#help>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+#help img {
+    width: 100%;
+}
+#footer{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 15px;
+}
+
     </style>
 </head>
 <body>
@@ -44,5 +103,127 @@
             <div></div>
         </div>
     </div>
+
+    <h1>Categories</h1>
+    <div id="category">
+      <div>
+        <div>
+        <div>
+          <img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="">
+          <h1>Shows</h1>
+        </div>
+        <div>
+          <img src="https://images.pexels.com/photos/2888679/pexels-photo-2888679.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="">
+          <h1>Food tours</h1>
+        </div>
+        </div>
+        <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS36QVKo6AYV8mvgHWY9z3Wm2kbNlpUe1lZXdVoLCPGlb_o6_2l3P7RdX_aGFGR6qLF3Ek&amp;usqp=CAU" alt="">
+          <h1>Architecture</h1>
+        </div>
+      </div>
+      <button>View More</button>
+      <div>
+        <!-- <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaKHFR-Mmi5bxCfcbEhCyP93q4fvn2LT4H3g&usqp=CAU" alt="">
+          <h1>Night City</h1>
+        </div>
+        <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwQd-MI3LYTZDJ8V4-cpMWyTvbMekK5_Jt1tJSdhxEjWr0AVuVexiL-dI__odG2_FJ0M8&usqp=CAU" alt="">
+          <h1>Firework</h1>
+        </div>
+        <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMixg0eDqwLSQBBzjvjpdGK1dH6wEvMSEruA&usqp=CAU" alt="">
+          <h1>Culture</h1>
+        </div> -->
+      </div>
+    </div>
+    <h1>Popular tours</h1>
+    <div id="tours">
+      <div>
+       <h1>Heart of South Korea</h1>
+       <p>During this Seoul City Full-Day</p>
+       <p>Tour--perfect for first-time visitors---see ancient temples, 
+         experience important koreans rituals, and shop for local goods 
+         all in one day. Plus, pick up from downtown is providede for convinenece.</p>
+       <p>Ages:0-99</p>
+       <p>Duration:7h 30m</p>
+       <p>Start time:Check availability</p>
+       <p>Language:English</p>
+       <h1>$ 90.00/per adult</h1>
+       <h1>Reserve   ------&gt;</h1>
+      </div>
+      <div>
+       <img src="https://images.wallpapershq.com/wallpapers/2440/wallpaper_2440_1080x2400.jpg" alt="">
+      </div>
+   </div>
+   <div id="ques">
+    <div>
+     <img src="https://images.unsplash.com/photo-1555883006-0f5a0915a80f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8&w=1000&q=80" alt="">
+    </div>
+    <div>
+     <h1>Frequently asked questions</h1>
+     <p>What document are needed to travel?</p>
+     <p>For what period can I cancel the trip?</p>
+     <p>What exactly do I need to take with me?</p>
+     <p>What are the best inexpensive tours in Seoul?</p>
+     <p>What top attractions are a must-see in Seoul?</p>
+     <p>What are the best tours to do in Seoul with kids?</p>
+    </div>
+   </div>
+   <h1>Explore Seoul with a local of your choice</h1>
+   <p>Learn about their personal stories, and find out how you can explore Seoul together</p>
+   <div id="explore">
+    <!-- append local guides here -->
+  </div>
+  <div id="help">
+    <div>
+     <h1>Need more help?</h1>
+     <input id="name" placeholder="Name" type="text">
+     <input id="email" placeholder="E-mail" type="text">
+     <input id="No" placeholder="Mobile No" type="number">
+     <input id="date" placeholder="Tour Date" type="text">
+     <input id="people" placeholder="No of People" type="number">
+     <input id="language" placeholder="Guide Language" type="text">
+     <button>Send Message ---></button>
+    </div>
+    <div>
+     <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_8ZuBwTxiw6r6W8ylblimNVgVM_LkXcbeUF5-IMW4ee8nxDjb" alt="">
+    </div>
+ </div>
+ <div id="footer">
+  <div>
+    <h2>About Wandder</h2>
+    <p>Our story</p>
+    <p>Press</p>
+    <p>Jobs</p>
+    <p>Blog</p>
+    <p>Sustainability</p>
+    <p>Destinations</p>
+  </div>
+  <div>
+    <h2>Download our app</h2>
+    <p>App store</p>
+    <p>Play Market</p>
+  </div>
+  <div>
+    <h2>Support</h2>
+    <p>Help Center for guests</p>
+    <p>Help Center for hosts</p>
+    <p>Privacy Policy</p>
+    <p>Terms & Conditions</p>
+  </div>
+  <div>
+    <h2>Gifts vouchers</h2>
+    <p>Buy a gift voucher</p>
+  </div>
+  <div>
+    <h2>Partership</h2>
+    <p>Become a host</p>
+    <p>Become a partner</p>
+  </div>
+ </div>
+
+
 </body>
 </html>
