@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Wandder</title>
+    <style>
+        #page{
+            display: flex;
+            margin: auto;
+            /* width: 90%; */
+            gap: 10px;
+        }
+        #page>div:nth-child(1){
+            width: 45%;
+            background-color: #ee8695;
+            padding-left: 7%;
+        }
+        #login{
+            width: 60%;
+            padding: 2%;  
+            text-align: right;
+             
+        }
+        
+        #login>div{
+            padding: 8%;
+            text-align: center;
+            
+        }
+        #login>div h1{
+            padding-bottom: 8%;
+        }
+        #login>div input{
+            width: 40%;
+            height: 10%;
+            margin-bottom: 5%;
+        }
+        button{
+            width: 20%;
+            height: 10%;
+            background-color: rgb(248, 173, 173);
+        }
+    </style>
+</head>
+<body>
+  <div id="page">  
+    <div>
+        <h1>Wandder</h1>
+        <h1>Discover Seoul <br/>Heart of South Korea</h1>
+    </div>
+    <div id="login">
+     <span>Not a member?</span>
+     <a href="">Sign up now</a>
+    <div>
+      <h1>Log in to Wandder</h1>
+      <h2>Email Address</h2>
+      <input id="email" type="email"/>
+      <h2>Password</h2>
+      <input id="password" type="text"/>
+      <br/>
+      <button>Sign in</button>
+    </div>
+    </div>
+  </div>  
+</body>
+</html>
