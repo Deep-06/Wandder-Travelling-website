@@ -1,0 +1,55 @@
+#navbar{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 90%;
+}
+#navbar > div:nth-child(2){
+    display: flex;
+    margin: auto;
+    width: 30%;
+    justify-content: space-between;
+}
+#navbar > div:nth-child(3){
+    display: flex;
+    margin: auto;
+    width: 20%;
+    justify-content: space-between;
+    color: rgb(23, 23, 219);
+}
+#navbar~h1{
+    font-size: 170px;
+  margin-left: 5%;
+}    
+#thingstodo{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    padding-left: 100px;
+    gap: 20px;
+   
+}
+#thingstodo img{
+    width: 100%;
+}
+
+#thingstodo > div:nth-child(2){
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin: auto;
+    padding-left: 40px;
+   
+}
+#thingstodo > div:nth-child(2) p{
+    font-size: 30px;   
+}
+#thingstodo > div:nth-child(2) img{
+    height: 100%;
+}
+#thingstodo > div:nth-child(2) h1{
+    font-size: 40px;   
+    color: rgb(24, 108, 108);
+}
