@@ -4,21 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup | Wandder</title>
+    <style>
+         *{
+            box-sizing: border-box;
+        }
+        #page{
+            margin: auto;
+            width: 100%;
+            background-color: #fab9f8;
+            text-align: center;
+            padding: 10px;
+        }
+        #page>div:nth-child(2){
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+        }
+        #signup{
+            width: 40%;
+            text-align: center;
+            background-color: white;
+        }
+        #signup input{
+            width: 55%;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        button{
+            margin: 10px;
+            width: 40%;
+            font-size: 20px;
+            padding: 1%;
+            background-color: #fab9f8;
+        }
+    </style>
 </head>
 <body>
-    <div id="signup">
-       <span>Already a member?</span>
-       <a href="">Login</a> 
-      <h1>Sign up to Wandder</h1>
-      <h2>Name</h2>
-      <input id="name" type="text"/>
-      <h2>Username</h2>
-      <input id="username" type="text"/>
-      <h2>Email</h2>
-      <input id="email" type="email"/>
-      <h2>Password</h2>
-      <input id="Password" type="text"/>
-      <button>Create Account</button>
+    <div id="page">
+        <div>
+            <h1>Wandder</h1>
+            <h1>Discover Seoul <br/>Heart of South Korea</h1>
+            <span>Already a member?</span>
+            <a href="Login.html">Login</a> 
+            <a href="Home.html">Home Page</a>
+        </div>
+        <div>
+          <div id="signup">
+           <h1>Sign up to Wandder</h1>
+           <h2>Name</h2>
+           <input id="name" type="text"/>
+           <h2>Username</h2>
+           <input id="username" type="text"/>
+           <h2>Email</h2>
+           <input id="email" type="email"/>
+           <h2>Password</h2>
+           <input id="Password" type="text"/>
+          </br>
+           <button id="sinup">Create Account</button>
+           </div>
+        </div>
     </div>
 </body>
+<script>
+    let sinbtn = document.getElementById("sinup");
+    sinbtn.addEventListener("click",function(){
+    alert("Sin up Successfully");
+})
+</script>
 </html>
