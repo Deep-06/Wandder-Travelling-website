@@ -26,7 +26,7 @@ data.forEach((element)=>{
   let image = document.createElement("img");
   let cate = Document.createElement("h1");
 
-  image.setAttribute("src", element.image);
+  image.setAttribute("src", element.img);
   cate.innerText = element.category;
 
   card.append(image,cate);
