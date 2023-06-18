@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page | Wandder</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      #book{
+        display: flex;
+        margin: auto;
+        width: 100%;
+      }
+      #book>div:nth-child(1){
+        background-color: rgb(138, 234, 234);
+        width: 45%;
+        padding: 7%;
+      }
+      #details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 55%;
+        padding: 7%;
+      }
+      #details input{
+        width: 60%;
+        height: 40px;
+        margin-bottom: 20px;
+      }
+      #details button{
+        width: 50%;
+        height: 30px;
+        background-color: rgb(138, 234, 234);
+      }
+      @media screen and (min-width:651px) and (max-width:1100px){
+        #details input{
+        width: 80%;
+        height: 40px;
+        margin-bottom: 20px;
+      }
+      #details button{
+        width: 50%;
+        height: 40px;
+        background-color: rgb(138, 234, 234);
+      }
+        }
+        @media screen and (max-width:650px){
+          #details input{
+        width: 90%;
+        height: 40px;
+        margin-bottom: 20px;
+      } 
+      #details button{
+        width: 50%;
+        height: 40px;
+        background-color: rgb(138, 234, 234);
+      }
+        }
+    </style>
+</head>
+<body>
+<div id="book">
+    <div>
+    <h1>Wandder</h1>
+    <h1>Discover Seoul <br/>Heart of South Korea</h1>
+    <h1>Book a Tour</h1>
+    <a href="./Home.html">Home Page</a>
+    </div>
+    <div id="details">
+    <h1>For Booking a Tour</h1>
+    <h2>Fill in the following details-</h2>
+    <input id="name" placeholder="Name" type="text">
+     <input id="email" placeholder="E-mail" type="text">
+     <input id="No" placeholder="Mobile No" type="number">
+     <input id="date" placeholder="Tour Date" type="text">
+     <input id="people" placeholder="No of People" type="number">
+     <input id="language" placeholder="Guide Language" type="text">
+     <button id="message">Send Message </button>
+    </div>
+</div>
+</body>
+<script>
+  let msgbttn = document.getElementById("message");
+
+  msgbttn.addEventListener("click", function(){
+    alert("Booking Successful");
+  })
+</script>
+</html>
