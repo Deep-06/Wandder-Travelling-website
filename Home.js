@@ -1,8 +1,10 @@
 let viewbtn = document.querySelector("#category  button");
 let container = document.getElementById("cont");
+
 let guidebtn = document.querySelector("#explore  button");
 let guide = document.getElementById("guide");
 let msgbtn = document.getElementById("msg");
+
 
 const data = [
   {
@@ -20,6 +22,7 @@ const data = [
     category:"Culture",
   }
 ]
+
 
 viewbtn.addEventListener("click", function () {
   display(data);
@@ -57,4 +60,5 @@ function displayimg(data1){
 
 msgbtn.addEventListener("click", function () {
   alert("Message send successfully, We will help you as soon as possible")
+
 })
