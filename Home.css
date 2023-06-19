@@ -8,6 +8,7 @@
     justify-content: space-between;
     width: 100%;
     background-color: rgb(198, 155, 238);
+    box-shadow: 2px 5px rgb(107, 104, 104);
     
 }
 #navbar > div:nth-child(2){
@@ -128,10 +129,7 @@
     height: 100%;
   }
 
-    margin-top: 20px;
-    font-size: 20px;
-    background-color:rgb(129, 129, 243) ;
-  }
+    
   .pic{
     border: 1px solid rgb(194, 190, 190);
     padding: 4%;
