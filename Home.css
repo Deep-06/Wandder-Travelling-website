@@ -8,6 +8,7 @@
     justify-content: space-between;
     width: 100%;
     background-color: rgb(198, 155, 238);
+    box-shadow: 2px 5px rgb(107, 104, 104);
     
 }
 #navbar > div:nth-child(2){
