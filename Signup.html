@@ -8,52 +8,68 @@
          *{
             box-sizing: border-box;
         }
-        #page{
-            margin: auto;
-            width: 100%;
-            background-color: #fab9f8;
-            text-align: center;
-            padding: 10px;
-        }
-        #page>div:nth-child(2){
+        body {
+            margin: 0;
+            padding: 0;
             display: flex;
+            align-items: center;
             justify-content: center;
-            padding: 5px;
-        }
-        #signup{
-            width: 40%;
-            text-align: center;
-            background-color: white;
-        }
-        #signup input{
-            width: 55%;
-            padding: 5px;
-            margin-bottom: 5px;
-        }
-        button{
-            margin: 10px;
-            width: 40%;
-            font-size: 20px;
-            padding: 1%;
-            background-color: #fab9f8;
-        }
-        @media screen and (min-width:651px) and (max-width:1100px){
-            #signup{
-            padding: 4%;  
-            width: 60%;
-            text-align: center;
-            background-color: white;
-        }
-        }
-        @media screen and (max-width:650px){
-            #signup{
-            padding: 4%;  
-            width: 70%;
-            text-align: center;
-            background-color: white;
-        }
+            height: 100vh;
+            background-image: radial-gradient(
+                circle farthest-corner at 10% 20%,
+                rgba(253, 101, 133, 1) 0%,
+                rgba(255, 211, 165, 1) 90%
+            );
         }
 
+        #page {
+            width: 400px;
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        #page h1 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #page h2 {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        #page input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: none;
+            background-color: #e2e2e2;
+        }
+
+        #page input::placeholder {
+            color: #888888;
+        }
+
+        #page button {
+            margin-top: 15px;
+            width: 100%;
+            background-color: #4796ff;
+            color: #ffffff;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 480px) {
+            #page {
+                width: 90%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -66,28 +82,28 @@
             <a href="Home.html">Home Page</a>
         </div>
         <div>
-          <div id="signup">
-           <h1>Sign up to Wandder</h1>
-           <h2>Name</h2>
-           <input id="name" type="text"/>
-           <h2>Username</h2>
-           <input id="username" type="text"/>
-           <h2>Email</h2>
-           <input id="email" type="email"/>
-           <h2>Password</h2>
-           <input id="Password" type="text"/>
-          </br>
-           <button id="sinup">Create Account</button>
-           </div>
+            <div>
+                <h1>Sign up to Wandder</h1>
+                <h2>Name</h2>
+                <input id="name" type="text" placeholder="Enter your name">
+                <h2>Username</h2>
+                <input id="username" type="text" placeholder="Choose a username">
+                <h2>Email</h2>
+                <input id="email" type="email" placeholder="Enter your email">
+                <h2>Password</h2>
+                <input id="Password" type="password" placeholder="Choose a password">
+                <button id="signup">Create Account</button>
+            </div>
+           
         </div>
     </div>
 </body>
 <script>
-    let sinbtn = document.getElementById("sinup");
+    let sinbtn = document.getElementById("signup");
     // let email = document.getElementById("email");
     // let pass = document.getElementById("Password");
     sinbtn.addEventListener("click",function(){
-    alert("Sin up Successfully");
+    alert("Sign up Successfully");
 })
 </script>
 </html>
